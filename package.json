@@ -1,0 +1,48 @@
+{
+  "name": "flynt2-component-scaffolder",
+  "version": "1.0.0",
+  "description": "CLI tool to scaffold Flynt 2.x component files",
+  "exports": "./dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aslauris/flynt2-component-scaffolder.git"
+  },
+  "keywords": [
+    "flynt",
+    "components",
+    "generator",
+    "wordpress"
+  ],
+  "author": "aslauris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aslauris/flynt2-component-scaffolder/issues"
+  },
+  "homepage": "https://github.com/aslauris/flynt2-component-scaffolder#readme",
+  "scripts": {
+    "build": "npx rollup -c",
+    "dev": "npx rollup -c -w",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "create-flynt2-component": "./dist/index.cjs"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "plop": "^3.0.0",
+    "plop-action-copy": "^1.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "install": "^0.13.0",
+    "npm": "^10.8.1",
+    "rollup": "^4.18.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-delete": "^2.0.0"
+  }
+}
