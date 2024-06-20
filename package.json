@@ -27,7 +27,7 @@
     "prepublish": "npm run build"
   },
   "bin": {
-    "create-flynt2-component": "./dist/index.cjs"
+    "create-flynt2-component": "dist/index.cjs"
   },
   "preferGlobal": true,
   "dependencies": {
